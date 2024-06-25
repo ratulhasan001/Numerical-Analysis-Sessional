@@ -2,5 +2,10 @@
 Lab 1/bisection_method
 .gitattributes
 .DS_Store
+.cph/
+.vscode/
+*.txt
 *.exe
 *.exec
+*.bin
+*.h
