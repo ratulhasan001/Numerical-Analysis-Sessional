@@ -22,16 +22,14 @@ int main()
 {
     float x[20], y[20][20];
     int n;
-    cout << "Enter number of data" << endl;
+    cout << "Number of data: ";
     cin >> n;
 
-    cout << "Enter data: " << endl;
+    cout << "Enter x and y: " << endl;
     for(int i = 0; i < n ; i++)
     {
-        cout << "x[" << i + 1 << "] = ";
-        cin >> x[i];
-        cout << "y[" << i + 1 <<"] = ";
-        cin >> y[i][0];
+        cout << "x[" << i + 1 << "] & " << "y[" << i + 1 <<"] = ";
+        cin >> x[i] >> y[i][0];
     }
 
 
@@ -43,16 +41,16 @@ int main()
         }
     }
 
-    cout << endl << "FORWARD DIFFERENCE TABLE" << endl;
-    for(int i = 0; i < n; i++)
-    {
-        cout << x[i];
-        for(int j = 0; j < n-i ; j++)
-        {
-            cout << "\t" << y[i][j];
-        }
-        cout << endl;
-    }
+    // cout << endl << "FORWARD DIFFERENCE TABLE" << endl;
+    // for(int i = 0; i < n; i++)
+    // {
+    //     cout << x[i];
+    //     for(int j = 0; j < n-i ; j++)
+    //     {
+    //         cout << "\t" << y[i][j];
+    //     }
+    //     cout << endl;
+    // }
     float value;
     cout << "Enter the desired value: ";
     cin >> value;
