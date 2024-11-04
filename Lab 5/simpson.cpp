@@ -21,16 +21,16 @@ int32_t main() {
     double h = abs(x[1] - x[0]);
     h /= 3;
 
-    double sum = y[0] + y[n - 1], odd_sum = 0, even_sum = 0;
+    double sum = y[0] + y[n - 1], sum_of_even = 0, sum_of_odd = 0;
     for(int i = 1; i < n - 1; i += 2) {
-        even_sum += y[i];
+        sum_of_odd += y[i];
     }
-    even_sum *= 4;
+    sum_of_odd *= 4;
     for(int i = 2; i < n - 1; i += 2) {
-        odd_sum += y[i];
+        sum_of_even += y[i];
     }
-    odd_sum *= 2;
-    sum = sum + odd_sum + even_sum;
+    sum_of_even *= 2;
+    sum = sum + sum_of_even + sum_of_odd;
     ans = h * sum;
     cout << ans << '\n';
 

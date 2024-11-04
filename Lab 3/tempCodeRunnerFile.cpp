@@ -1,1 +1,2 @@
-sync_with_stdio
+error" << '\n';
+        return;

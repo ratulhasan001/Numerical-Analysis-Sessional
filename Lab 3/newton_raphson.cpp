@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 const double error = 0.0001;
+
 
 double f(double x) {
     return x * sin(x) + cos(x);
@@ -12,7 +12,7 @@ double g(double x) {
 }
 
 void newton_raphson(double x) {
-    if(f(x) * g(x) > 0) {
+    if(g(x) == 0) {
         cout << "error" << '\n';
         return;
     }
